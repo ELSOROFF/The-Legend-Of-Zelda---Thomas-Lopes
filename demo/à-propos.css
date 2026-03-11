@@ -1,0 +1,338 @@
+@font-face {
+    font-family: zeldafont1;
+    src: url(../fonts/HyliaSerifBeta-Regular.otf);
+}
+
+@font-face {
+    font-family: parafont;
+    src: url(../fonts/CashMarket-BoldRounded.ttf);
+}
+
+@font-face {
+    font-family: fontchoice;
+    src: url(../fonts/Louvere\ PERSONAL\ USE\ ONLY!.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ---------- BODY ---------- */
+
+body {
+
+
+    font-family: Manrope, sans-serif;
+
+    background-image: url("../image/backgroundbody.PNG");
+
+    text-align: center;
+
+    color: white;
+
+    padding: 20px;
+
+}
+
+
+/* ---------- HEADER ---------- */
+
+header {
+
+    background: linear-gradient(90deg, #616060, #292929);
+
+    border-radius: 20px;
+
+    padding: 20px;
+
+    margin-bottom: 20px;
+
+}
+
+.logo {
+
+    width: 300px;
+
+    max-width: 90%;
+
+    display: block;
+
+    margin: auto;
+
+}
+
+
+.reso {
+
+    margin-top: 10px;
+
+    font-size: 30px;
+    font-family: fontchoice;
+}
+
+.reso2 {
+    font-family: fontchoice;
+    font-size: 30px;
+
+}
+
+.reso img {
+
+
+
+    margin-left: 10px;
+
+}
+
+
+/* ---------- NAV ---------- */
+
+nav {
+
+    background: linear-gradient(90deg, #616060, #292929);
+
+    border-radius: 20px;
+
+    padding: 10px;
+
+    margin-bottom: 30px;
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+
+}
+
+.Nintendored {
+    color: red;
+}
+
+.Linkblue {
+    color: #74d2fa;
+}
+
+.Zeldapink {
+    color: #c18db8;
+}
+
+a {
+    color: #d4ce46;
+}
+
+
+
+nav a {
+
+    color: #d4ce46;
+
+    text-decoration: none;
+
+    font-size: 20px;
+
+}
+
+
+
+/* ---------- TITRES ---------- */
+
+h1,
+h2 {
+
+    font-family: "Zeldafont1";
+
+    color: #d4ce46;
+    font-size: 100px;
+    /* box-shadow: 2px 2px 2px 2px rgb(41, 41, 41); */
+}
+
+h3 {
+
+    margin: 10px 0;
+
+}
+
+
+/* ---------- PRESENTATION ---------- */
+
+.introduction {
+
+    max-width: 800px;
+
+    margin: auto;
+
+    font-size: 25px;
+
+    font-family: "parafont";
+}
+
+
+/* ---------- SEPARATEUR ---------- */
+
+.separator {
+
+    width: 100%;
+
+    margin: 40px 0;
+
+}
+
+
+/* ---------- CHRONOLOGIE ---------- */
+
+.chrono {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 40px;
+
+}
+
+.chrono img {
+
+    max-width: 500px;
+
+    width: 100%;
+
+}
+
+table {
+
+    border-collapse: collapse;
+    display: flex;
+}
+
+td,
+th {
+
+    border: 2px solid #d4ce46;
+
+    padding: 10px;
+
+}
+
+
+
+
+/* ---------- JEUX ---------- */
+
+.jeux {
+
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 40px;
+
+}
+
+.jeu {
+
+    max-width: 400px;
+
+}
+
+.jeu img {
+
+    width: 100%;
+
+    border-radius: 10px;
+
+}
+
+
+/* ---------- FORMULAIRE ---------- */
+
+form {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+
+    max-width: 500px;
+
+    margin: auto;
+
+}
+
+input,
+textarea {
+
+    padding: 10px;
+
+    border-radius: 5px;
+
+    border: none;
+
+}
+
+footer {
+
+    margin-top: 100px;
+
+    padding: 50px;
+
+    background-image: url("../image/footerbackground.png");
+
+    border-radius: 10px;
+
+}
+
+.footertext {
+    font-family: "parafont";
+    font-size: 20px;
+}
+
+.footermyname {
+    font-style: italic;
+}
+
+@media screen and (max-width:380px) {
+
+    nav {
+
+        flex-direction: column;
+
+    }
+
+    .chrono {
+
+        flex-direction: column;
+
+    }
+
+    .jeux {
+
+        flex-direction: column;
+
+    }
+
+    .logo {
+
+        width: 200px;
+
+    }
+
+    p,
+    .introduction {
+        width: 100px;
+        height: 110px;
+        text-align: center;
+        overflow: auto;
+    }
+}
